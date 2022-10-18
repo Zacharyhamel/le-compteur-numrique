@@ -9,7 +9,7 @@ input.onButtonPressed(Button.B, function () {
     Nb_personne += -1
 })
 basic.forever(function () {
-    basic.showNumber(Nb_personne)
+    basic.showNumber(Math.constrain(Nb_personne, 0, 100))
 })
 basic.forever(function () {
     if (Nb_personne >= 10) {
